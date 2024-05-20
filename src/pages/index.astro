@@ -1,10 +1,12 @@
 ---
 import SiteLayout from "../layouts/SiteLayout.astro";
+import Game from "../components/Game.svelte";
 ---
 
 <SiteLayout>
   <main class="flex flex-col gap-8 w-full h-full">
     <h1>You got 10 seconds to DRAW THAT OSS!</h1>
     <p>What will you make?
+    <Game client:only="svelte" />
   </main>
 </SiteLayout>
